@@ -1,0 +1,33 @@
+{
+  "name": "ociresourcecompose",
+  "version": "1.0.0",
+  "description": "Type Script Project with Graphql to Compose Oracle Cloud Infrastruture Resource",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paihari/multi-cloud-control-orchestrator-graphql.git"
+  },
+  "keywords": [
+    "graphql",
+    "oci",
+    "oracle-cloud",
+    "controlapi",
+    "control-api",
+    "cloud-control",
+    "mutation-resources",
+    "read-resources",
+    "hasura"
+  ],
+  "author": "paihari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paihari/multi-cloud-control-orchestrator-graphql/issues"
+  },
+  "homepage": "https://github.com/paihari/multi-cloud-control-orchestrator-graphql#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.9"
+  }
+}

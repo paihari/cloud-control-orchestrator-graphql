@@ -28,6 +28,7 @@ services:
       ## uncomment next line to set an admin secret
       # HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
       AWSRESOURCECOMPOSE_SERVICE_URL: http://awsresourcecompose:6001/graphql
+      OCIRESOURCECOMPOSE_SERVICE_URL: http://awsresourcecompose:7001/graphql
     volumes:
       - ./hasura/metadata:/hasura-metadata
       - ./hasura/migrations:/hasura-migrations
@@ -37,6 +38,12 @@ services:
       - ~/.aws/:/root/.aws:ro  
     ports:
       - "6001:6001"    
+  ociresourcecompose:
+    build: ./ociresourcecompose
+    volumes:
+      - ~/.oci/:/root/.oci:ro  
+    ports:
+      - "7001:7001"    
 
 volumes:
   db_data:

@@ -1,0 +1,14 @@
+FROM node:lts-alpine
+ENV NODE_ENV=production
+
+WORKDIR /app
+
+COPY ["package.json", "package-lock.json*", "./"]
+
+RUN npm i -D @types/node@18.11.9
+RUN npm install graphql@16.6.0 graphql-compose@9.0.10 graphql-compose-json@6.2.0 oci-core@2.48.1 @graphql-yoga/node@2.3.0 --save
+RUN npm install --production --silent 
+
+COPY . .
+
+CMD ["npx", "ts-node", "src/main.ts" ]
