@@ -14,6 +14,7 @@ services:
     depends_on:
     - "postgres"
     - "awsresourcecompose"
+    - "ociresourcecompose"
     restart: always
     environment:
       ## postgres database to store Hasura metadata
