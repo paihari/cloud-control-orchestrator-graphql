@@ -45,5 +45,5 @@ yarn.lock
 package.lock
 
 
-db_data
-hasura
+# db_data
+# hasura
