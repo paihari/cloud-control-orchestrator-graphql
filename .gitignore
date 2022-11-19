@@ -45,9 +45,5 @@ yarn.lock
 package.lock
 
 
-
-db_data/**/*.*
-db_data/base/*
-db_data/base/1/*
-
-db_data/PG_VERSION
+#db_data
+#hasura

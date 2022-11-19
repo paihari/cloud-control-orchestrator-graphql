@@ -5,6 +5,8 @@ services:
     restart: always
     volumes:
     - ./db_data:/var/lib/postgresql/data
+    - ./config/pg_hba.conf:/var/lib/postgresql/data/pg_hba.conf
+    - ./config/postgresql.conf:/var/lib/postgresql/data/postgresql.conf
     environment:
       POSTGRES_PASSWORD: postgrespassword
   graphql-engine:
@@ -45,6 +47,5 @@ services:
       - ~/.oci/:/root/.oci:ro  
     ports:
       - "7001:7001"    
-
 volumes:
   db_data:
