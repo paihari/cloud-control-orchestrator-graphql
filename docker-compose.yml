@@ -10,7 +10,7 @@ services:
     environment:
       POSTGRES_PASSWORD: postgrespassword
   graphql-engine:
-    image: hasura/graphql-engine:v2.14.0
+    image: hasura/graphql-engine:v2.14.1
     ports:
     - "8080:8080"
     depends_on:
@@ -31,7 +31,7 @@ services:
       ## uncomment next line to set an admin secret
       # HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
       AWSRESOURCECOMPOSE_SERVICE_URL: http://awsresourcecompose:6001/graphql
-      OCIRESOURCECOMPOSE_SERVICE_URL: http://awsresourcecompose:7001/graphql
+      OCIRESOURCECOMPOSE_SERVICE_URL: http://ociresourcecompose:7001/graphql
     volumes:
       - ./hasura/metadata:/hasura-metadata
       - ./hasura/migrations:/hasura-migrations
