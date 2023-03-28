@@ -1,4 +1,10 @@
 # Multicloud Control Orchestrator with Graphql 
+- Hasura
+- AWS
+- OCI
+- Docker
+
+
 
 To run
 - docker compose up
