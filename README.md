@@ -1,4 +1,4 @@
-# 🌐 Multicloud Control Orchestrator with GraphQL
+# 🌐 Multicloud Control Orchestrator with GraphQL 
 
 This project provides a lightweight, containerized **GraphQL-based control layer** for managing cloud resources across **AWS** and **OCI (Oracle Cloud Infrastructure)**. It uses **Hasura** as the central GraphQL engine and integrates with provider-specific GraphQL services via schema stitching or remote joins.
 
