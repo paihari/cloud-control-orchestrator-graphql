@@ -81,7 +81,7 @@ cloud-control-orchestrator-graphql/
 
 ## ✍️ Author
 
-Created by [Your Name / Organization]
+Created by Simplificare
 
 ---
 
